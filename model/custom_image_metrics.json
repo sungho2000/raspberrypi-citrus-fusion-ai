@@ -1,0 +1,35 @@
+{
+  "model": "custom_image",
+  "best_epoch": 15,
+  "pretrained": false,
+  "train_fruits": 63,
+  "weight_mean_train_only": 166.8,
+  "weight_std_train_only": 67.29159479577469,
+  "parameters": 99411,
+  "test_unit": "individual_image",
+  "test": {
+    "loss": 0.03551357341701597,
+    "image": {
+      "accuracy": 0.9809523809523809,
+      "macro_f1": 0.9809470757234285,
+      "confusion_matrix": [
+        [
+          67,
+          0,
+          3
+        ],
+        [
+          1,
+          69,
+          0
+        ],
+        [
+          0,
+          0,
+          70
+        ]
+      ]
+    },
+    "n_images": 210
+  }
+}
