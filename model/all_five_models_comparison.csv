@@ -1,0 +1,6 @@
+﻿model,description,test_unit,n_test_samples,test_accuracy,test_macro_f1,test_loss,best_epoch,pretrained,parameters,confusion_matrix
+image,MobileNet image,individual_image,210,0.9714285714285714,0.9713759967286854,0.05485123401796002,11,True,1001251,"[[64, 0, 6], [0, 70, 0], [0, 0, 70]]"
+weight,Weight MLP,unique_fruit_weight,15,0.9333333333333333,0.9326599326599326,0.2044965922832489,60,False,643,"[[5, 0, 0], [0, 4, 1], [0, 0, 5]]"
+fusion,MobileNet fusion,individual_image,210,0.9761904761904762,0.9761600681140911,0.08945897350342767,18,True,1001379,"[[65, 0, 5], [0, 70, 0], [0, 0, 70]]"
+custom_image,Custom lightweight CNN,individual_image,210,0.9809523809523809,0.9809470757234285,0.03551357341701597,15,False,99411,"[[67, 0, 3], [1, 69, 0], [0, 0, 70]]"
+custom_fusion,Custom lightweight CNN fusion,individual_image,210,1.0,1.0,0.0009154884010231832,35,False,99475,"[[70, 0, 0], [0, 70, 0], [0, 0, 70]]"

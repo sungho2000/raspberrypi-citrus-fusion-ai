@@ -1,0 +1,35 @@
+{
+  "model": "custom_fusion",
+  "best_epoch": 35,
+  "pretrained": false,
+  "train_fruits": 63,
+  "weight_mean_train_only": 166.8,
+  "weight_std_train_only": 67.29159479577469,
+  "parameters": 99475,
+  "test_unit": "individual_image",
+  "test": {
+    "loss": 0.0009154884010231832,
+    "image": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "confusion_matrix": [
+        [
+          70,
+          0,
+          0
+        ],
+        [
+          0,
+          70,
+          0
+        ],
+        [
+          0,
+          0,
+          70
+        ]
+      ]
+    },
+    "n_images": 210
+  }
+}

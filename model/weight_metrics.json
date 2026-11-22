@@ -1,0 +1,35 @@
+{
+  "model": "weight",
+  "best_epoch": 60,
+  "pretrained": false,
+  "train_fruits": 63,
+  "weight_mean_train_only": 166.8,
+  "weight_std_train_only": 67.29159479577469,
+  "parameters": 643,
+  "test_unit": "unique_fruit_weight",
+  "test": {
+    "loss": 0.2044965922832489,
+    "image": {
+      "accuracy": 0.9333333333333333,
+      "macro_f1": 0.9326599326599326,
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    "n_images": 15
+  }
+}
