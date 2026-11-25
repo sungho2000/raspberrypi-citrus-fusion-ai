@@ -1,15 +1,3 @@
-"""Citrus AI in one script: prepare, train, evaluate, compare, export.
-
-Run from repository root:
-  py scripts/citrus.py prepare
-  py scripts/citrus.py train --models custom --epochs 60
-  py scripts/citrus.py compare
-  py scripts/citrus.py export --models custom --verify
-
-Existing checkpoints from train_citrus.py and train_light_cnn.py are compatible.
-The 14 photos of each fruit are independent classification samples. Only the
-train/val/test split is grouped by fruit_id to prevent information leakage.
-"""
 from __future__ import annotations
 
 import argparse

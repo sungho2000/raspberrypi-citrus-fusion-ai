@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""20%-target structured channel pruning for custom Citrus CNNs.
-
-Run from repository root (Python environment with torch/torchvision/onnx):
-    python scripts/prune_models.py --epochs 8 --ratio 0.20
-
-Prunes actual Conv2d/BatchNorm/Linear dimensions, fine-tunes on TRAIN only,
-selects best loss on VAL only, then exports ONNX files for Pi benchmarking.
-Original checkpoints and ONNX models are never modified.
-"""
 from __future__ import annotations
 
 import argparse

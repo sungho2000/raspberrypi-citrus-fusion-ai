@@ -1,1 +1,35 @@
 
+# Citrus Fusion AI - PC training and optimization dependencies
+# Usage (Windows / Python 3.12 recommended):
+#   python -m pip install -r requirements.txt
+#
+# This file covers training, image preprocessing, ONNX export,
+# INT8 quantization and benchmarking. It is NOT a minimal Pi runtime file.
+# The Raspberry Pi inference-only setup is documented in README.md.
+# Versions are intentionally not pinned across Windows and Raspberry Pi OS.
+# For a reproducible environment, save versions with: python -m pip freeze
+
+# Image processing and numeric/tabular data
+numpy
+pandas
+Pillow
+opencv-python
+
+# CNN training, validation, and structured pruning
+torch
+torchvision
+
+# ONNX export, validation, static INT8 quantization, inference
+onnx
+onnxruntime
+
+# Raspberry Pi GPIO: HX711 weight sensor (Linux ARM64 only).
+# Requires OS-level liblgpio (and, for source builds, swig/liblgpio-dev).
+# See README.md before installing on the Raspberry Pi.
+lgpio; sys_platform == "linux" and platform_machine == "aarch64"
+
+# Raspberry Pi camera:
+# Picamera2 is commonly provided by Raspberry Pi OS:
+#   sudo apt install python3-picamera2
+# Verify it is importable in the active virtual environment.
+# rpicam-apps is an OS package, not a pip dependency.
