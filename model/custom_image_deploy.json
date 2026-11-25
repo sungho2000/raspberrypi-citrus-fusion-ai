@@ -1,0 +1,26 @@
+{
+  "class_names": [
+    "mandarin",
+    "orange",
+    "hwanggeumhyang"
+  ],
+  "image_size": [
+    224,
+    224
+  ],
+  "image_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "image_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "weight_mean": 166.8,
+  "weight_std": 67.29159479577469,
+  "model_type": "image",
+  "weight_is_standardized": true,
+  "architecture": "custom_depthwise_separable_cnn_v1"
+}
