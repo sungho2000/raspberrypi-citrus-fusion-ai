@@ -1,19 +1,3 @@
-"""Manual square-crop tool for the Citrus Fusion AI dataset.
-
-Run at the repository root:
-    py scripts/manual_square_crop.py
-
-Controls:
-    Drag with left mouse button : move square (or reposition it by clicking outside)
-    Mouse wheel / + / -        : enlarge / shrink square
-    Enter                      : crop, resize, and save as RGB PNG; next image
-    N                          : skip image
-    R                          : reset square
-    Q or Esc                   : quit safely
-
-Output: 224x224 RGB PNG (lossless) in dataset/processed, preserving folder structure.
-Original images in dataset/raw are never changed.
-"""
 from pathlib import Path
 
 import cv2

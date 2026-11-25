@@ -1,19 +1,3 @@
-#!/usr/bin/env python3
-"""Evaluate Citrus ONNX models on Raspberry Pi 5 and organize results.
-
-Expected source files in ~/:
-  8 ONNX model files (FP32 / INT8 / structured pruning / pruning+INT8)
-  Deploy JSON files for each model, or its matching non-INT8 parent
-  pi_test/dataset/metadata/splits.csv
-  pi_test/dataset/processed/... (for image-using models)
-
-Usage (after source files are copied to ~/):
-  source ~/citrus-venv/bin/activate
-  python ~/benchmark_citrus_8models.py
-
-Outputs in ~/citrus_benchmark_8models/; existing source files are never modified.
-Eight variants of lightweight image CNN and image+weight fusion are evaluated.
-"""
 from __future__ import annotations
 
 import argparse

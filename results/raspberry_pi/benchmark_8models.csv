@@ -1,0 +1,9 @@
+﻿model,model_family,optimization,accuracy_unit,n_accuracy_samples,accuracy_percent,n_latency_runs,avg_latency_ms,median_latency_ms,p95_latency_ms,peak_process_rss_mb,onnx_model_size_mb,avg_power_w
+custom_image,image-only,FP32 baseline,image,210,98.0952,630,1.753332,1.741515,1.839922,69.953,0.3812,
+custom_image_int8,image-only,INT8,image,210,99.0476,630,1.796899,1.78446,1.857108,70.781,0.1488,
+custom_image_pruned,image-only,pruning,image,210,97.619,630,1.366589,1.354951,1.448775,69.688,0.2497,
+custom_image_pruned_int8,image-only,pruning+INT8,image,210,97.619,630,1.659543,1.643331,1.713627,69.672,0.1122,
+custom_fusion,image+weight,FP32 baseline,image,210,100.0,630,1.762673,1.754525,1.831923,69.703,0.3818,
+custom_fusion_int8,image+weight,INT8,image,210,100.0,630,1.834556,1.823117,1.89359,71.234,0.1491,
+custom_fusion_pruned,image+weight,pruning,image,210,100.0,630,1.378972,1.371554,1.459201,69.828,0.2502,
+custom_fusion_pruned_int8,image+weight,pruning+INT8,image,210,100.0,630,1.687122,1.673979,1.739922,70.031,0.1124,
